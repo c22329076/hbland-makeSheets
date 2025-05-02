@@ -20,7 +20,7 @@ ResultSet rs = null;
 try {
     Class.forName("oracle.jdbc.OracleDriver");
     javax.naming.Context ctx = new javax.naming.InitialContext();
-    javax.sql.DataSource ds = (javax.sql.DataSource) ctx.lookup("java:comp/env/jdbc/oracle_HBWEBT");
+    javax.sql.DataSource ds = (javax.sql.DataSource) ctx.lookup("java:comp/env/jdbc/your_oracle");
     conn = ds.getConnection();
     conn.setAutoCommit(true);
 
