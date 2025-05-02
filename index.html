@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>匯出資料</title>
+</head>
+<body>
+  <h2>謄本產製作業</h2>
+  <form action="export.jsp" method="get">
+    起始日期（七碼民國格式）: <input type="text" name="startDate" pattern="\d{7}" inputmode="numeric" maxlength="7" required><br><br>
+    結束日期（七碼民國格式）: <input type="text" name="endDate" pattern="\d{7}" inputmode="numeric" maxlength="7" required><br><br>
+    <input type="submit" value="在頁面上顯示">
+  </form>
+</body>
+</html>
